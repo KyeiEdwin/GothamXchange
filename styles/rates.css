@@ -337,8 +337,8 @@ footer{
     box-shadow: 0px 0px 5px 10px green;
     padding: 7px;
     position: fixed;
-    right: 30px;
-    bottom: 100px;
+    right: 4%;
+    bottom: 20%;
     z-index: 999;
     animation: pulse 2s ease-out infinite;
 }
@@ -423,4 +423,8 @@ footer{
         font-size: 12px;
     }
 
+    .fixed-whatsapp-link{
+        padding: 5;
+        right: 8%;
+    }
 }
