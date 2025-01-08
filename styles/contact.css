@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", serif;
+}
+
+body {
+    margin: 0px 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 12px 10px;
+    z-index :3;
+    position: relative;
+}
+.nav-bar-sticky{ position: fixed; 
+    top:0;
+    z-index:100; 
+    width: 100%; 
+    height: 80px;
+    margin: 0;
+    padding-right:20px;
+    background-color: rgb(255, 255, 255, 0.98);
+    }
+
+.menu::before{content:"Gothamxchange";  /* trying to fix the logo on side navbar*/
+    color: rgb(247, 93, 37); 
+    font-size: 20px; 
+    font-family: "Anton", serif;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 100px;
+    display: none;
+}
+.menu{ display: flex; height: 80px; align-items: center;}
+.menu li{ padding-left: 30px;}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(247, 93, 37);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Anton", serif;
+    padding: 15px 30px;
+    white-space: nowrap;
+}
+.menu li a:hover{
+    background-color: rgb(2, 21, 61);
+    border-radius: 20px;
+    transition: all 0.1s ease-out;
+}
+
+#Active-Contact a {
+    background-color: rgb(208, 202, 202);
+    border-radius: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    text-shadow: -1px 3px  rgb(255, 127, 80);
+    color: rgb(2, 21, 61);
+    font-size:30px;
+    font-weight: 1000;
+    font-family: "Anton", serif;
+}
+.open-menu , .close-menu{
+    position: absolute;
+    color: rgb(247, 93, 37);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top:20px;
+    right: 20px;
+}
+#check{display: none;}
+
+.contact-header{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 50px;
+       background-color:  rgb(2, 21, 61);
+}
+.contact-header-image img{  width: 100%; border-radius: 30%;}
+
+
+
+.contact-form{
+    flex: 1;
+    background-color:rgb(2, 21, 61);
+    padding: 50px 80px;
+    border-radius: 40px;
+    background-color: rgb(208, 202, 202);
+}
+
+
+.contact-form h1{ 
+    color: rgb(247, 93, 37);
+    font-family: "Dm serif text","Roboto Serif";
+    line-height : 80px;
+    white-space: nowrap;
+}
+
+.contact-form .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(2, 21, 61);
+    font-size: 16px;
+    font-family: "Dm serif text", " roboto serif", serif;
+    padding: 0px 20px;
+    color:rgb(2, 21, 61);
+}
+
+input::placeholder{ color:rgb(2, 21, 61); font-family: "Dm serif text", " roboto serif", serif;}
+
+.contact-form button{ 
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: "Dm serif text", "roboto serif", serif;
+    color: rgb(255, 127, 80);
+    background-color: rgb(2, 21, 61);
+}
+
+.contact-main-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 80px;
+    gap: 50px;
+    margin-top: 30px;
+}
+.whatsapp-link-container{
+    flex: 1;
+    border: 2px solid rgb(6, 130, 6);
+    border-radius: 20px;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.whatsapp-link-container a {text-decoration: none;}
+.whatsapp-contact{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    width: 100%;
+}
+
+.whatsapp-logo{ padding: 20px 0 0 20px ;}
+.whatsapp-logo img{ width: 70px;}
+
+.whatsapp-content{
+    height: 150px;
+    padding: 20px 0 0 20px;
+    }
+.whatsapp-content p { color: black; }
+.whatsapp-content h2 { color: rgb(6, 182, 26); margin-bottom: 20px;}
+
+
+.email-link-container{
+    flex: 1;
+    border: 2px solid rgb(211, 29, 5);
+    border-radius: 20px;
+    max-width: 350px;
+}
+
+.email-link-container a {text-decoration: none;}
+.email-contact{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    width: 100%;
+}
+
+.email-logo{ padding: 20px 0 0 20px ;}
+.email-logo img{ width: 70px;}
+
+.email-content{
+    height: 150px;
+    padding: 20px 0 0 20px;
+    }
+.email-content p { color: black}
+.email-content h2 { color: rgb(211, 29, 5); margin-bottom: 20px;}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 50px;
+    margin-top: 80px;
+    background-color: rgb(208, 202, 202);
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 0 50px;
+
+}
+.quick-about{ padding: 20px;}
+.quick-about span h2{
+        text-shadow: -1px 3px  rgb(255, 127, 80);
+        color: rgb(2, 21, 61);
+        font-weight: bolder;
+        font-family: "anton","roboto serif", serif;
+        margin-bottom: 30px;
+}
+.quick-about p {color: rgb(2, 21, 61); font-size: 16px; line-height: 24px;}
+
+.quick-links { padding: 20px;}
+.quick-links h2{ margin-bottom: 30px; color: rgb(2, 21, 61); white-space: nowrap;}
+.quick-links-menu{ list-style: none;}
+.quick-links li a{ 
+    font-size:16px ;
+    text-decoration: none;
+    line-height: 25px;
+    color: rgb(2, 21, 61);
+}
+
+.formal-contacts{padding: 20px;}
+.formal-contacts ul li{ 
+    list-style: none;
+    font-size:16px ;
+    color: rgb(2, 21, 61);
+}
+
+.formal-contacts ul li a{ 
+    text-decoration: none;
+    font-size:16px ;
+    color: rgb(2, 21, 61);
+}
+
+.formal-contacts h2{margin-bottom: 30px ; color: rgb(2, 21, 61); white-space: nowrap;}
+
+.social-media-links { 
+    color: rgb(2, 21, 61);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.social-media-links i { font-size: 30px;}
+
+.copyright-notice{
+    color: rgb(2, 21, 61);
+    align-self: center;
+    white-space: nowrap;
+}
+
+.fixed-whatsapp-link{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 10px green;
+    padding: 7px;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 999;
+    animation: pulse 2s ease-out infinite;
+}
+@keyframes pulse{
+    0%{ transform: scale(0.5)}
+    50%{ transform: scale(1.2);}
+    100%{ transform: scale(0.5);}
+}
+.fixed-whatsapp-link img{
+    width: 70px;
+}
+
+
+@media (max-width: 690px){
+    .nav-bar{z-index: 100;}
+    .menu::before{
+        display:block;
+        font-size: 18px;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items:center;
+        width: 68%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        background-color: rgb(2, 21, 61, 0.98);
+        transition: all 0.5s ease-in-out;
+    }
+    .menu li a{ color: rgb(208, 202, 202);}
+
+    #check:checked ~ .menu{ left: 0;}
+
+    .menu li{
+       line-height: 50px;
+        border-bottom: 1px solid rgb(247, 93, 37);
+        width: 100%;
+        text-align: center;
+    }
+
+    #Active-Contact a{ background-color: unset;}
+    #Home:hover, #Rates:hover, #About:hover, #Active-Contact:hover{ background-color: rgb(247, 93, 37);}
+
+    .menu li a:hover{
+        background-color:unset;
+    }
+    .menu li a {padding: 20px;}
+    .logo a{ font-size: 18px;}
+    .open-menu ,.close-menu{ display: block;}
+
+    .contact-header{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 50px;
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        gap: 50px;
+    }
+
+    .email-contact{ max-width: none;} 
+    .whatsapp-contact{ max-width: none;}
+
+}

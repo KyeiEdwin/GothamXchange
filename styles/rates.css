@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Serif", serif;
+}
+
+body {
+    margin: 0px 0px;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    background-image:url(/images/vector-smiling-with-money.jpg);
+    background-repeat: no-repeat ;
+    background-size:contain;
+    background-position: center;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+nav::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index: 2;
+    background-color:rgba(2, 21, 61,0.8);
+
+}
+
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 12px 10px;
+    z-index :3;
+    position: relative;
+}
+.nav-bar-sticky{ position: fixed; 
+    top:0;
+    z-index:100; 
+    width: 100%; 
+    height: 80px;
+    margin: 0;
+    padding-right:20px;
+    background-color: rgb(255, 255, 255, 0.98);
+    }
+
+.menu::before{content:"Gothamxchange";  /* trying to fix the logo on side navbar*/
+    color: rgb(247, 93, 37); 
+    font-size: 20px; 
+    font-family: "Anton", serif;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 100px;
+    display: none;
+}
+.menu{ display: flex; height: 80px; align-items: center;}
+.menu li{ padding-left: 30px;}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(247, 93, 37);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Anton", serif;
+    padding: 15px 30px;
+    white-space: nowrap;
+}
+.menu li a:hover{
+    background-color: rgb(2, 21, 61);
+    border-radius: 20px;
+    transition: all 0.1s ease-out;
+}
+#Active-Rates a{
+    background-color: rgb(208, 202, 202);
+    border-radius: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    text-shadow: -1px 3px  rgb(255, 127, 80);
+    color: rgb(2, 21, 61);
+    font-size:30px;
+    font-weight: 1000;
+    font-family: "Anton", serif;
+}
+.open-menu , .close-menu{
+    position: absolute;
+    color: rgb(247, 93, 37);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top:20px;
+    right: 20px;
+}
+#check{display: none;}
+
+
+
+#rate{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 70%;
+    background-color: rgb(208, 202, 202);
+    border-radius: 40px;
+    
+}
+.row{padding: 20px;}
+.row > div {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.rate-messsage-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.rate-messsage-section > div h2{
+    color: rgb(247, 93, 37);
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-family: "Dm serif text", " roboto serif", serif;
+}
+.rate-messsage-section > div p{
+    max-width: 70%;
+    line-height: 25px;
+    color: rgb(2, 21, 61);
+    font-size: 16px;
+}
+
+
+
+
+.card-selection-section > div li{ margin-bottom: 10px;}
+
+.card-selection-section .home_rate_ul{
+    width: 100%;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.home_rate_ul li{list-style: none;}
+
+.home_rate_ul li select{
+    outline: none;
+    font-size: 14px;
+    font-family: "Dm serif text", " roboto serif", serif;
+    color: rgb(2, 21, 61);
+    border: 2px solid rgb(2, 21, 61);
+    background-color: rgb(208, 202, 202);
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+}
+.card-selection-section li { display: inline-block;}
+
+.select_tit{
+    width: 100%;
+    margin-bottom: 20px;
+    color: rgb(2, 21, 61);
+    font-size: 16px;
+    font-family: "Dm serif text", " roboto serif", serif;
+}
+
+
+
+
+.rate-solution-seection > div { margin-bottom: 10px}
+
+.rate-solution-seection .home_rate_row li {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.home_rate_row li input{
+    outline: none;
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    border: 2px solid rgb(2, 21, 61);
+    background-color: rgb(208, 202, 202);
+    border-radius: 15px;
+    color: rgb(2, 21, 61);
+    font-size: 14px;
+    font-family: "Dm serif text", " roboto serif", serif;
+}
+.home_rate_row li input::placeholder{
+    color: rgb(2, 21, 61);
+    font-size: 14px;
+    font-family: "Dm serif text", " roboto serif", serif;
+}
+
+.home_rate_row .li_last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+}
+
+.select_tit_end{
+    margin-bottom: 20px;
+    color: rgb(247, 93, 37);
+    font-size: 25px;
+    font-family: "Dm serif text", " roboto serif", serif;
+}
+
+.result_div{
+    color: rgb(2, 21, 61);
+    border: 3px solid rgb(247, 93, 37);
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 20px 80px;
+    height: 150px;
+    color: rgb(2, 21, 61);
+    font-size: 24px;
+    font-family: "Dm serif text", " roboto serif", serif;
+}
+
+.whatsapp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.whatsapp-link a{
+    text-decoration: none;
+    color: rgb(247, 93, 37);
+    background-color: rgb(2, 21, 61);
+    border: 2px solid rgb(241, 123, 5);
+    border-radius: 15px;
+    padding: 18px;
+    font-family: "Dm serif text", " roboto serif", serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 50px;
+    margin-top: 80px;
+    background-color: rgb(208, 202, 202);
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 0 50px;
+
+}
+.quick-about{ padding: 20px;}
+.quick-about span h2{
+        text-shadow: -1px 3px  rgb(255, 127, 80);
+        color: rgb(2, 21, 61);
+        font-weight: bolder;
+        font-family:"Anton","Roboto Serif";
+        margin-bottom: 30px;
+}
+.quick-about p {color: rgb(2, 21, 61); font-size: 16px; line-height: 24px;}
+
+.quick-links { padding: 20px;}
+.quick-links h2{ margin-bottom: 30px; color: rgb(2, 21, 61); white-space: nowrap;}
+.quick-links-menu{ list-style: none;}
+.quick-links li a{ 
+    font-size:16px ;
+    text-decoration: none;
+    line-height: 25px;
+    color: rgb(2, 21, 61);
+}
+
+.formal-contacts{padding: 20px;}
+.formal-contacts ul li{ 
+    list-style: none;
+    font-size:16px ;
+    color: rgb(2, 21, 61);
+}
+
+.formal-contacts ul li a{ 
+    text-decoration: none;
+    font-size:16px ;
+    color: rgb(2, 21, 61);
+}
+
+.formal-contacts h2{margin-bottom: 30px ; color: rgb(2, 21, 61);white-space: nowrap;}
+
+.social-media-links { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.social-media-links i { font-size: 30px; color: rgb(2, 21, 61);}
+
+.copyright-notice{
+    color: rgb(2, 21, 61);
+    align-self: center;
+    white-space: nowrap;
+}
+
+.fixed-whatsapp-link{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 10px green;
+    padding: 7px;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 999;
+    animation: pulse 2s ease-out infinite;
+}
+@keyframes pulse{
+    0%{ transform: scale(0.5)}
+    50%{ transform: scale(1.2);}
+    100%{ transform: scale(0.5);}
+}
+.fixed-whatsapp-link img{
+    width: 70px;
+}
+
+
+@media(max-width: 690px){
+    .nav-bar{z-index: 100;}
+    .menu::before{
+        display:block;
+        font-size: 18px;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items:center;
+        width: 68%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        background-color: rgb(2, 21, 61, 0.98);
+        transition: all 0.5s ease-in-out;
+    }
+    .menu li a{ color: rgb(208, 202, 202);}
+
+    #check:checked ~ .menu{ left: 0;}
+
+    .menu li{
+       line-height: 50px;
+        border-bottom: 1px solid rgb(247, 93, 37);
+        width: 100%;
+        text-align: center;
+    }
+
+    #Active-Rates a{ background-color: unset;}
+    #Active-Rates:hover, #Home:hover, #About:hover, #Contact:hover{ background-color: rgb(247, 93, 37);}
+
+    .menu li a:hover{
+        background-color:unset;
+    }
+    .menu li a {padding: 20px;}
+    .logo a{ font-size: 18px;}
+    .open-menu ,.close-menu{ display: block;}
+
+    .container{
+        width: 100%;
+    }
+
+    .rate-messsage-section > div p{
+        max-width: 100%;
+     }
+
+    .card-selection-section .home_rate_ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+    
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        gap: 50px;
+    }
+
+}

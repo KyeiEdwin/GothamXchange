@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon" />
+
+    <title>GothamXchange</title>
+    <link rel="icon" href="images/GothamXchange_logo_111-removebg-preview.jpg" type="image/jpg">
+
+</head>
+<body>
+    <nav>
+    <div class="nav-bar-sticky">
+        <ul class="nav-bar">
+        <li class="logo"><a href="#">GOTHAMXCHANGE</a></li>
+        <input type="checkbox" id="check">
+        <span class="menu">
+            <li id="active-home"><a href="#">Home</a></li>
+            <li id="About"><a href="about.html">About Us</a></li>
+            <li id="Rates"><a href="rates.html">Rates</a></li>
+            <li id="Contact"><a href="contact.html">Contact Us</a></li>
+            <label for ="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </div>
+
+    <section class="welcome"> <p >Welcome to <span>GothamXchange</span>, the ultimate destination for buying, selling, and trading gift cards! We're here to make your gift card experience seamless, secure, and rewarding. Whether you're looking to turn unwanted gift cards into cash.</p>
+    </section>
+
+       <section class="rate-sell-section">
+        <div class="rate-sell-message"><h1>Sell Your Card for a Higher Price</h1>
+            <p>We are here to bring youu the best and secured way to sell your gift card in return for a good rate.</p>
+            <div class="button-container">
+                <div><button type="button" class="sell-button" onclick="location.href='contact.html';">Sell</button></div>
+                
+                <div> <button type="button" class="rate-button"onclick="location.href='#rate';">Check Rate</button></div>
+            </div>
+        </div>
+        </section>
+    </nav>
+<!--<hr style="height:50px; background-color: rgb(2, 21, 61); margin-bottom: 30px;">-->
+<div class="abstract-design"><img src="images/shape.svg" alt="shape"></div>
+
+<main>
+<section class="accepted-popular-cards">
+    <div class="cards-acceptance-message">
+        <h1>Accepted Gift Card</h1>
+        <p>We accept a wide range of options for your convenience. Currently we accept gift cards from popular brands.</p>
+    </div>
+    <div class="image-group">
+        <div class="image-scroll">
+        <img src="images/amazon.webp" alt="card">
+        <img src="images/apple.webp" alt="card">
+        <img src="images/ebay.webp" alt="card">
+        <img src="images/playstore.webp" alt="card">
+        <img src="images/steam (1).webp" alt="card">
+        <img src="images/spotify.webp" alt="card">
+        <img src="images/vanilla.webp" alt="card">
+        <img src="images/zelle.webp" alt="card">
+        </div>
+        <div class="image-scroll" aria-hidden="true">
+        <img src="images/amazon.webp" alt="card">
+        <img src="images/apple.webp" alt="card">
+        <img src="images/ebay.webp" alt="card">
+        <img src="images/playstore.webp" alt="card">
+        <img src="images/steam (1).webp" alt="card">
+        <img src="images/spotify.webp" alt="card">
+        <img src="images/vanilla.webp" alt="card">
+        <img src="images/zelle.webp" alt="card">
+        </div>
+    </div>
+</section>
+
+<section class="choose-us-section">
+    <div class="choose-us-message">
+        <h1>The Best Choice is Clear. Choose Us</h1>
+        <p> We are a top expert in the feild, with unparalled skills aand proven records of delivery. Don't settle for less. Choose the best.</p>
+    </div>
+    <div class="reasons-container">
+    <div class="secured-reasons">
+        <span class="material-symbols-outlined"> security</span>
+            <h2>Secure Transactions</h2>
+            <p>Your platform uses advanced encryption and fraud prevention tools to ensure all trades are safe and secure.</p>
+        
+    </div>
+    <div class="payment-reasons">
+        <span class="material-symbols-outlined">rocket_launch</span>
+        <h2>Instant Payment</h2>
+        <p>Customers can receive instant cash, credit, or alternative gift cards for their trades without unnecessary delays</p>
+    </div>
+    <div class="rates-reasons">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <h2>Competitive Rates</h2>
+        <p>You offer some of the best rates in the market, ensuring customers get the maximum value for their gift cards.</p>
+    </div>
+    </div>
+</section>
+
+<section class="rate-calculator" id="rate"> 
+    <div class="container"> 
+     <div class="row"> 
+     <div class="rate-messsage-section"> 
+       <div class="section-title text-center mb-55"> 
+        <h2 class="wow fadeInUp" data-wow-delay=".4s">Rate Calculator</h2> 
+        <p class="wow fadeInUp" data-wow-delay=".6s">The exchange rates will change with the market in real time, this price is for reference only, please ask for the latest price on WhatsApp before sending the card.	</p> 
+       </div> 
+      </div> 
+      
+      <div class="card-selection-section"> 
+         <div class="home_rate_ul">
+         <li>
+         <div class="select_tit">Gift Card Category</div>
+         <select id="firstSelect" onchange="updateSecondSelect(this.value)">
+           <option value="">Select</option>
+           
+           <option value="category1">Vanilla</option>
+           
+           <option value="category2">Google Play</option>
+           
+           <option value="category3">eBay</option>
+           
+           <option value="category4">Amazon</option>
+           
+           <option value="category5">Steam</option>
+           
+           <option value="category6">iTunes</option>
+           
+           <option value="category7">FootLocker</option>
+           
+           <option value="category8">Razer Gold</option>
+           
+           <option value="category9">Sephora</option>
+           
+           <option value="category10">American Express</option>
+           
+           <option value="category11">Nike</option>
+           
+           <option value="category12">Nordstrom</option>
+           
+           <option value="category13">Xbox</option>
+           
+           <option value="category14">CashApp</option>
+           
+           <option value="category15">Chime</option>
+           
+           <option value="category16">Zelle</option>
+           
+           <option value="category17">Green dot</option>
+           
+           <option value="category18">Macy&#039;s</option>
+           
+           <option value="category19">Walmart</option>
+           
+           <option value="category20">VISA</option>
+           
+           <option value="category21">PayPal</option>
+           
+           <option value="category22">Venmo</option>
+           
+         </select>
+         </li>
+         <li class="second-select-li">
+         <div class="select_tit">Gift Card</div>
+         <select id="secondSelect">
+           <option value="">Select</option>
+         </select>
+         </li>
+          </div> 
+     </div>
+         
+         <div class="rate-solution-seection">
+         <div class="home_rate_row">
+         
+     
+         <li>
+         <div class="select_tit">Amount($)</div>
+         <input name="" value="" placeholder="Your gift card amount" id="numsl">
+          </li>
+          
+          <li class="li_last">
+             <div class="select_tit_end">Cash Value</div>
+             <div class="result_div">
+                 <div id="amount">GHS</div>
+                 <div class="ac_fh">(&#8373)</div>
+             </div>
+          </li>
+          </div> 
+          
+          <div class="wid_cen">
+         
+          <div class="whatsapp-link">
+         <a href="/?about_8/" class="theme-btn mr-3 mb-3">Get Started</a>
+         </div>
+         
+         </div> 
+         
+     </div> 
+ 
+   
+ </div>
+ </div>
+ </section>
+
+
+<div class="abstract-design"><img src="images/shape.svg" alt="shape"></div>
+
+</main>
+
+<footer>
+    <div class="footer-grid">
+    <div class="quick-about">
+        <span><h2>GOTHAMXCHANGE</h2></span>
+        <p>Our platform is built on trust and security, utilizing advanced technology to protect your information and transactions.<br> We also pride ourselves on exceptional customer service, with a dedicated team ready to assist you at every step.</p>
+    </div>
+    <div class="quick-links">
+        <h2>Quick Links</h2>
+        <ul class="quick-links-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="formal-contacts">
+        <h2>Contact Us</h2>
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i><p></p>Email Address: <a href="mailto:oppongedwin951@gmail.com" target="_blank">oppongedwin951@gmail.com</a></p></li>
+                <li><i class="fa-solid fa-phone"></i><p>Phone Number: <a href="tel: +0595794406">0595794406</a></p></li>
+            </ul>
+    </div>
+</div>
+
+<hr style="background-color: rgb(2,21,61); height: 2px; border: none; margin-bottom: 20px; width: 85%; align-self: center;">
+
+    <div class="social-media-links">    
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div>
+            <i class="fa-brands fa-square-snapchat"></i>
+        </div>
+            
+    </div>
+
+    <div class="copyright-notice">
+        <p><i> copyright&#169 2024 GothamXchange. All Right Reserved</i></p>
+    </div>
+
+    <section class="fixed-whatsapp-link">
+       <a href="https://wa.me/+233501936089" target="_blank"> <span><img src="images/WhatsApp-PNG-Picture.png"></span></a>
+    </section>
+</footer>
+
+
+<script src="/scripts/script.js"></script>
+</body>
+</html>

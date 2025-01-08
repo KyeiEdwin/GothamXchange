@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/rates.css">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon" />
+
+    <title>GothamXchange check rate</title>
+    <link rel="icon" href="images/GothamXchange_logo_111-removebg-preview.jpg" type="image/jpg">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-bar-sticky">
+            <ul class="nav-bar">
+            <li class="logo"><a href="index.html">GOTHAMXCHANGE</a></li>
+            <input type="checkbox" id="check">
+            <span class="menu">
+                <li id="Home"><a href="index.html">Home</a></li>
+                <li id="About"><a href="about.html">About Us</a></li>
+                <li id="Active-Rates"><a href="#">Rates</a></li>
+                <li id="Contact"><a href="contact.html">Contact Us</a></li>
+                <label for ="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="rate"> 
+        <div class="container"> 
+         <div class="row"> 
+         <div class="rate-messsage-section"> 
+           <div class="section-title text-center mb-55"> 
+            <h2 class="wow fadeInUp" data-wow-delay=".4s">Rate Calculator</h2> 
+            <p class="wow fadeInUp" data-wow-delay=".6s">The exchange rates will change with the market in real time, this price is for reference only, please ask for the latest price on WhatsApp before sending the card.	</p> 
+           </div> 
+          </div> 
+          
+          <div class="card-selection-section"> 
+             <div class="home_rate_ul">
+             <li>
+             <div class="select_tit">Gift Card Category</div>
+             <select id="firstSelect" onchange="updateSecondSelect(this.value)">
+               <option value="">Select</option>
+               
+               <option value="category1">Vanilla</option>
+               
+               <option value="category2">Google Play</option>
+               
+               <option value="category3">eBay</option>
+               
+               <option value="category4">Amazon</option>
+               
+               <option value="category5">Steam</option>
+               
+               <option value="category6">iTunes</option>
+               
+               <option value="category7">FootLocker</option>
+               
+               <option value="category8">Razer Gold</option>
+               
+               <option value="category9">Sephora</option>
+               
+               <option value="category10">American Express</option>
+               
+               <option value="category11">Nike</option>
+               
+               <option value="category12">Nordstrom</option>
+               
+               <option value="category13">Xbox</option>
+               
+               <option value="category14">CashApp</option>
+               
+               <option value="category15">Chime</option>
+               
+               <option value="category16">Zelle</option>
+               
+               <option value="category17">Green dot</option>
+               
+               <option value="category18">Macy&#039;s</option>
+               
+               <option value="category19">Walmart</option>
+               
+               <option value="category20">VISA</option>
+               
+               <option value="category21">PayPal</option>
+               
+               <option value="category22">Venmo</option>
+               
+             </select>
+             </li>
+             <li class="second-select-li">
+             <div class="select_tit">Gift Card</div>
+             <select id="secondSelect">
+               <option value="">Select</option>
+             </select>
+             </li>
+              </div> 
+         </div>
+             
+             <div class="rate-solution-seection">
+             <div class="home_rate_row">
+             
+         
+             <li>
+             <div class="select_tit">Amount($)</div>
+             <input name="" value="" placeholder="Your gift card amount" id="numsl">
+              </li>
+              
+              <li class="li_last">
+                 <div class="select_tit_end">Cash Value</div>
+                 <div class="result_div">
+                     <div id="amount">GHS</div>
+                     <div class="cedis">(&#8373)</div>
+                 </div>
+              </li>
+              </div> 
+              
+              <div class="wid_cen">
+             
+              <div class="whatsapp-link">
+             <a href="">Get Started</a>
+             </div>
+             
+             </div> 
+             
+         </div> 
+     
+       
+     </div>
+     </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-grid">
+        <div class="quick-about">
+            <span><h2>GOTHAMXCHANGE</h2></span>
+            <p>Our platform is built on trust and security, utilizing advanced technology to protect your information and transactions.<br> We also pride ourselves on exceptional customer service, with a dedicated team ready to assist you at every step.</p>
+        </div>
+        <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul class="quick-links-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Rates</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="formal-contacts">
+            <h2>Contact Us</h2>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i><p></p>Email Address: <a href="mailto:oppongedwin951@gmail.com" target="_blank">oppongedwin951@gmail.com</a></p></li>
+                    <li><i class="fa-solid fa-phone"></i><p>Phone Number: <a href="tel: +0595794406">0595794406</a></p></li>
+                </ul>
+        </div>
+    </div>
+    
+    <hr style="background-color: rgb(2,21,61); height: 2px; border: none; margin-bottom: 20px; width: 85%; align-self: center;">
+    
+        <div class="social-media-links">    
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-snapchat"></i>
+            </div>
+                
+        </div>
+    
+        <div class="copyright-notice">
+            <p><i> copyright&#169 2024 GothamXchange. All Right Reserved</i></p>
+        </div>
+    
+        <section class="fixed-whatsapp-link">
+           <a href="https://wa.me/+233501936089" target="_blank"> <span><img src="images/WhatsApp-PNG-Picture.png"></span></a>
+        </section>
+    </footer>
+    
+
+
+
+<script>
+    function updateSecondSelect(value) {
+      var secondSelect = document.getElementById('secondSelect');
+      // 清空第二个select的options
+      secondSelect.options.length = 0;
+      // 根据第一个select的value值，设置第二个select的options
+       
+      if (value === 'category1') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - USD - 4847/4513/4111 - 500 - ASK ！", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - USD - 4847/4513/4111 - 300~499 - ASK ！", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanllia - USD - 4847/4513/4111 - 100~299 - ASK ！", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanllia - USD - 4097/4118 - 500", "530");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - CAD - 4086/4282/5338/5339 - 100~500 - ASK !", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - CAD - 4263/4850/5203/53328 - 100~500", "960");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - CAD - 5171/5219 - 50~500 - ASK !", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - CAD - 5336/511340 - 100~500 - ASK！", "");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - USD - 5253/5456/5164/5432 - 100~500 - AKS !", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - USD - 4097/4118 100~199", "530");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - USD - 4097/4118 200~299", "530");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Vanilla - USD - 4097/4118 300-499", "530");
+        
+      }
+      
+      else if (value === 'category2') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Google Play - USD - America/United States", "1080");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Google Play - EUR - European Union", "910");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Google Play - UK - Britain/England", "910");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Google Play - CHF - Switzerland", "720");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Google Play - AUD - Australia", "480");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Google Play - CAD - Canada", "530");
+        
+      }
+      
+      else if (value === 'category3') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("eBay - USD - 25~99", "1000");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("eBay - USD - 100~200", "1150");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("eBay - USD - 200~500-ASK！", "0");
+        
+      }
+      
+      else if (value === 'category4') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Amazon - USD - Pic - 25~100", "620");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Amazon - USD - Code - 25~500", "550");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Amazon - USD - Pic/Code -100+（Ask！！）", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Amazon - Any other country（Ask！！）", "0");
+        
+      }
+      
+      else if (value === 'category5') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Steam - USD - America/United States", "1200");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Steam - EUR - European Union", "1300");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Steam - UK - Britain/England", "1570");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Steam - CAD - Canada", "860");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Steam - AUD - Australia", "800");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Steam - NZD - New Zealand", "720");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Steam - CHF - Switzerland", "1390");
+        
+      }
+      
+      else if (value === 'category6') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - USD - Fast - 100/150", "1190");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - USD - Fast - 200~500（Multiple of 50）", "1210");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - USD - Fast - 10~499（Any value）", "1150");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - CAD - Fast - 25~500（Any value）", "840");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - UK - Fast - 25~499（Any value）", "1200");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - UK - Fast - 50~500（Multiple of 50）", "1200");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - AUD - Fast - 25~499（Any value）", "730");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("iTunes - AUD - Fast - 50~500（Multiple of 50）", "750");
+        
+      }
+      
+      else if (value === 'category7') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Foot Locker - USD - 100~500", "1250");
+        
+      }
+      
+      else if (value === 'category8') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Razer Gold - SGP - Singapore", "915");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Razer Gold - NZD - New Zealand", "735");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Razer Gold - CAD - Canada", "860");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Razer Gold - EUR - European Union - ASK ！", "");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Razer Gold - RM - Malaysia", "300");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Razer Gold - USD - 10~500", "1250");
+        
+      }
+      
+      else if (value === 'category9') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Sephora - USD - 50~99", "1000");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Sephora - USD - 100~500", "1200");
+        
+      }
+      
+      else if (value === 'category10') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("American Express - USD - 3779 - 50~99", "720");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("American Express - USD - 3779 - 100~299", "770");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("American Express - USD - 3779 - 300~499", "770");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("American Express - USD - 3779 - 500", "770");
+        
+      }
+      
+      else if (value === 'category11') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Nike - USD - 100~500", "1130");
+        
+      }
+      
+      else if (value === 'category12') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Nordstrom - USD - 100~500", "1040");
+        
+      }
+      
+      else if (value === 'category13') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox - CHF - Switzerland", "1050");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox - SGP - Singapore", "630");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox- NZD - New Zealand", "480");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox - AUD - Australia", "570");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox - CAD - Canada", "650");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox - UK - Britain/England", "1150");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox - EUR - European Union", "1000");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Xbox - USD - America/United States", "1030");
+        
+      }
+      
+      else if (value === 'category14') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("CashApp - USD - 10+", "1300");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("CashApp - USD - 20~99", "1350");
+        
+      }
+      
+      else if (value === 'category15') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Chime - USD - 20~99", "1400");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Chime - USD - 100~3000", "1450");
+        
+      }
+      
+      else if (value === 'category16') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Zelle - USD - 10+", "800");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Zelle - USD - 100+", "950");
+        
+      }
+      
+      else if (value === 'category17') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Greendot gift card - 4143/4497 - 20~99 - ASK ！", "0");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Greendot gift card - 4143/4497 - 300~500", "1250");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Greendot gift card - 4143/4497 - 200~299", "1200");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Greendot gift card - 4143/4497 - 100~199", "1150");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Green dot - USD - Transfer 400-500", "1000");
+        
+      }
+      
+      else if (value === 'category18') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Macy's - USD - 50-99", "1000");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Macy's - USD - 100~300", "1200");
+        
+      }
+      
+      else if (value === 'category19') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Walmart money card - 4020/5181/4373/5273/4468 - 100~500", "1200");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Walmart gift card -USD -100~300", "930");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Walmart gift card -USD -20~99", "850");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Walmart - USD - Transfer 400~500", "1000");
+        
+      }
+      
+      else if (value === 'category20') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("VISA - 4358/4034/4912/511332 - 100~299", "1350");
+          
+        secondSelect.options[secondSelect.options.length] = new Option("VISA - 4358/4034/4912/511332 - 300~500", "1350");
+        
+      }
+      
+      else if (value === 'category21') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("PayPal - USD - Transfer 20+", "1300");
+        
+      }
+      
+      else if (value === 'category22') {
+          
+        secondSelect.options[secondSelect.options.length] = new Option("Venmo - USD - Transfer  20+", "600");
+        
+      }
+      
+    }
+    
+    </script>
+
+
+<script>
+    var a_input = document.getElementById('numsl');
+  var a_value = document.getElementById('amount');
+  
+  document.getElementById('secondSelect').addEventListener('change', function() {
+
+  var num_val = a_input.value;
+  var select=document.querySelector("#secondSelect");
+  var quantity = parseInt(select.value, 10);
+  var amount = quantity  * num_val;
+  document.getElementById('amount').textContent = amount;
+});
+
+  a_input.addEventListener('input', function(event) {
+
+  var num_val = a_input.value;
+  var select=document.querySelector("#secondSelect");
+  var quantity = parseInt(select.value, 10);
+  var amount = quantity * num_val;
+  console.log('Input event fired!');
+  console.log('Current value:', event.target.value);
+  a_value.textContent = amount;
+  
+});
+
+
+</script>
+
+</body>
+
+
+</html>
