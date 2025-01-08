@@ -7,7 +7,7 @@
     font-family: "Roboto Serif", serif;
 }
 
-html,body {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -58,7 +58,7 @@ nav::before{
     background-color: rgb(255, 255, 255, 0.98);
     }
 
-.menu::before{content:"Gothamxchange"; 
+.menu::before{content:"Gothamxchange";
     color: rgb(247, 93, 37); 
     font-size: 20px; 
     font-family: "Anton", serif;
@@ -408,7 +408,6 @@ footer{
         grid-template-rows: auto auto;
         gap: 10px;
     }
-    
 
     .footer-grid{
         display: grid;
@@ -427,5 +426,6 @@ footer{
         padding: 5;
         right: 8%;
         bottom: 10%;
-    }
+    }    
+
 }
