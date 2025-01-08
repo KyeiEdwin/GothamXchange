@@ -133,7 +133,7 @@ html,body {
 }
 .contact-form .textarea-box{
     width: 100%;
-    margin:80px 0 50px 0;
+    margin: 80px 0 50px 0;
 }
 
 .input-box input{
@@ -364,6 +364,8 @@ footer{
         grid-template-rows: auto auto;
         gap: 50px;
     }
+
+    .contact-form{padding: 50px 30px;}
 
     .contact-main-section{
         display: grid;
