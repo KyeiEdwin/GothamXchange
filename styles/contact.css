@@ -158,15 +158,15 @@ input::placeholder{ color:rgb(2, 21, 61); font-family: "Dm serif text", " roboto
 }
 
 .contact-main-section{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+   display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
     padding: 50px 80px;
     gap: 50px;
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .whatsapp-link-container{
-    flex: 1;
     border: 2px solid rgb(6, 130, 6);
     border-radius: 20px;
     max-width: 300px;
@@ -192,7 +192,6 @@ input::placeholder{ color:rgb(2, 21, 61); font-family: "Dm serif text", " roboto
 
 
 .email-link-container{
-    flex: 1;
     border: 2px solid rgb(211, 29, 5);
     border-radius: 20px;
     max-width: 350px;
@@ -344,6 +343,13 @@ footer{
     .open-menu ,.close-menu{ display: block;}
 
     .contact-header{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 50px;
+    }
+
+    .contact-main-section{
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         gap: 50px;
