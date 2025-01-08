@@ -466,7 +466,7 @@ nav::before{
     background-color: rgb(2, 21, 61);
     border: 2px solid rgb(241, 123, 5);
     border-radius: 15px;
-    padding: 18px;
+    padding: 18px 50px;
     font-family: "Dm serif text", " roboto serif", serif;
 }
 
@@ -613,7 +613,7 @@ footer{
 
     .image-scroll img{ height: 120px; margin: 0 18px; }
 
-    .choose-us-message h1{font-size: 32px; white-space: normal;}/* white space set to wrap at media screen max 500px*/
+    .choose-us-message h1{font-size: 32px; white-space: normal;}
 
     .reasons-container{
         display: grid;
