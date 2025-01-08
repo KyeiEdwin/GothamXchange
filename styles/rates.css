@@ -12,7 +12,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 nav{
-    background-image:url(/images/vector-smiling-with-money.jpg);
+    background-image:url(images/vector-smiling-with-money.jpg);
     background-repeat: no-repeat ;
     background-size:contain;
     background-position: center;
@@ -54,7 +54,7 @@ nav::before{
     background-color: rgb(255, 255, 255, 0.98);
     }
 
-.menu::before{content:"Gothamxchange";  /* trying to fix the logo on side navbar*/
+.menu::before{content:"Gothamxchange"; 
     color: rgb(247, 93, 37); 
     font-size: 20px; 
     font-family: "Anton", serif;
