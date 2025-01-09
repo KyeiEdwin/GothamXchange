@@ -220,7 +220,8 @@ footer{
     gap: 30px;
 
 }
-.social-media-links i { font-size: 30px;}
+
+.social-media-links i { font-size: 30px; color: rgb(2, 21, 61);}
 
 .copyright-notice{
     color: rgb(2, 21, 61);

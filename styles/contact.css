@@ -111,7 +111,6 @@ html,body {
 
 
 .contact-form{
-    flex: 1;
     background-color:rgb(2, 21, 61);
     padding: 50px 80px;
     border-radius: 40px;
@@ -133,7 +132,7 @@ html,body {
 }
 .contact-form .textarea-box{
     width: 100%;
-    margin: 80px 0 50px 0;
+    margin:80px 0 50px 0;
 }
 
 .input-box input{
@@ -290,7 +289,8 @@ footer{
     gap: 30px;
 
 }
-.social-media-links i { font-size: 30px;}
+
+.social-media-links i { font-size: 30px; color: rgb(2, 21, 61);}
 
 .copyright-notice{
     color: rgb(2, 21, 61);
