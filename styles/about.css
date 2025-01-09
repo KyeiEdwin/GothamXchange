@@ -264,9 +264,8 @@ footer{
     #Active-About a{ background-color: unset;}
     #Home:hover, #Rates:hover, #Active-About:hover, #Contact:hover{ background-color: rgb(247, 93, 37);}
 
-    .menu li a:hover{
-        background-color:unset;
-    }
+    .menu li a:hover{background-color:unset;}
+    
     .menu li a {padding: 20px;}
     .logo a{ font-size: 18px;}
     .open-menu ,.close-menu{ display: block;}

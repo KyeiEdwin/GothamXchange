@@ -348,6 +348,8 @@ footer{
         width: 100%;
         text-align: center;
     }
+    
+    .menu li a:hover{background-color: unset;}
 
     #Active-Contact a{ background-color: unset; border: none;}
     #Home:hover, #Rates:hover, #About:hover, #Active-Contact:hover{ background-color: rgb(247, 93, 37);}

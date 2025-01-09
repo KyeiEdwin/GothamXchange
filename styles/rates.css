@@ -383,6 +383,8 @@ footer{
         text-align: center;
     }
 
+    .menu li a:hover{background-color: unset;}
+
     #Active-Rates a{ background-color: unset;}
     #Active-Rates:hover, #Home:hover, #About:hover, #Contact:hover{ background-color: rgb(247, 93, 37);}
 

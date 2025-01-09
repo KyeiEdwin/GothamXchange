@@ -592,6 +592,8 @@ footer{
         text-align: center;
     }
 
+    .menu li a:hover{background-color: unset;}
+
     #active-home a{ background-color: unset;}
     #active-home:hover, #Rates:hover, #About:hover, #Contact:hover{ background-color: rgb(247, 93, 37);}
 
