@@ -194,6 +194,8 @@ nav::before{
     margin-right: 100px;
     cursor: pointer;
 }
+
+
 .abstract-design { width: 100%; height:auto;}
 .abstract-design img{ width: 100%; height: 300px;}
 
@@ -207,9 +209,11 @@ nav::before{
     margin-bottom: 100px;
 }
 .cards-acceptance-message{ 
-    align-self: center;
-    text-align: center;
-    max-width: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .cards-acceptance-message h1{
     color: rgb(2, 21, 61);
@@ -219,6 +223,8 @@ nav::before{
     margin-bottom: 25px;
 }
 .cards-acceptance-message p{ 
+    max-width: 30%;
+    text-align: center;
     color: rgb(2, 21, 61);
      font-size: 18px;
     line-height: 20px;}
@@ -258,13 +264,15 @@ nav::before{
     margin-bottom: 50px;
 }
 .choose-us-message{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: rgb(247, 93, 37);
 }
 .choose-us-message h1{
+    text-align: center;
     font-size: 45px;
     font-weight: 800;
     font-family:"DM Serif Dispaly","Roboto Serif"; 
@@ -273,7 +281,7 @@ nav::before{
 }
 .choose-us-message p{ 
      font-size: 18px;
-     max-width: 550px;
+     max-width: 35%;
      text-align: center;
     line-height: 25px;}
 
@@ -478,6 +486,8 @@ nav::before{
 footer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     padding: 20px 50px;
     margin-top: 80px;
@@ -561,6 +571,11 @@ footer{
 }
 
 
+@media(max-width: 490px){
+    .choose-us-section{ padding: 50px 30px;}
+}
+
+
 @media(max-width: 690px){
     .nav-bar{z-index: 100;}
     .menu::before{
@@ -614,12 +629,14 @@ footer{
     .rate-button{margin-top: 18px; margin-right: 0;}
     .sell-button{ margin-left: 0;}
 
-    .cards-acceptance-message{ max-width: none;}
+    .cards-acceptance-message p{ max-width: none;}
     .cards-acceptance-message h1{ font-size: 32px;  white-space: nowrap;}
 
     .image-scroll img{ height: 120px; margin: 0 18px; }
+    .image-group:hover .image-scroll{ animation-play-state: unset;}
 
     .choose-us-message h1{font-size: 32px; white-space: normal;}
+    .choose-us-message p {max-width: none;}
 
     .reasons-container{
         display: grid;
