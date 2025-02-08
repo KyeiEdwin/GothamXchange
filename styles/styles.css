@@ -132,6 +132,7 @@ nav::before{
 }
 .welcome span{ color: rgb(247, 93, 37);  font-family:"Lobster", serif ;}
 
+.main-sell-container{ width: 100%;}
 .rate-sell-section{
     display: grid;
     grid-template-columns:repeat(auto-fit, 1fr) ;
@@ -141,8 +142,8 @@ nav::before{
     align-items: center;
     border-radius: 50px;
     position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -20%;
     z-index: 3;
 
@@ -163,13 +164,13 @@ nav::before{
     font-size: 30px;
     font-family:"DM Serif Dispaly","Roboto Serif";
     margin-bottom: 20px;}
+    
 .rate-sell-message p{ font-size: 18px; }
 
 .button-container{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    border-radius: 20px;
     width: 100%;
     margin-top: 50px;
 }
@@ -207,6 +208,7 @@ nav::before{
     align-items: space-between;
     gap: 100px;
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 .cards-acceptance-message{ 
     width: 100%;
@@ -498,8 +500,10 @@ footer{
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
     padding: 0 50px;
-
+    justify-content: center;
+    align-items: center;
 }
+
 .quick-about{ padding: 20px;}
 .quick-about span h2{
         text-shadow: -1px 3px  rgb(255, 127, 80);
@@ -644,7 +648,6 @@ footer{
         grid-template-rows: repeat(3,auto);
         gap: 80px;
     }
-
     
     .container{
         width: 100%;
@@ -681,4 +684,28 @@ footer{
         align-items: center;
     }
 
+}
+
+@media (min-width: 690px) and (max-width: 980px){
+
+    .button-container{
+        display:flex;
+        justify-content:space-between;
+        gap: 80px;
+    }
+
+    .cards-acceptance-message p{ max-width: 60%;}
+    .cards-acceptance-message h1{ white-space: normal;}
+
+    .choose-us-message h1{ white-space: normal; max-width: 80%;}
+    .choose-us-message p {max-width: 60%;}
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
 }

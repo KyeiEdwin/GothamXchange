@@ -111,7 +111,6 @@ html,body {
 
 
 .contact-form{
-    background-color:rgb(2, 21, 61);
     padding: 50px 80px;
     border-radius: 40px;
     background-color: rgb(208, 202, 202);
@@ -155,9 +154,11 @@ html,body {
     border: 2px solid rgb(2, 21, 61);
     font-size: 16px;
     font-family: "Dm serif text", " roboto serif", serif;
-    padding: 0px 20px;
+    padding: 10px 20px;
     color:rgb(2, 21, 61);
 }
+
+textarea::placeholder{ color:rgb(2, 21, 61); font-family: "Dm serif text", " roboto serif", serif;}
 
 input::placeholder{ color:rgb(2, 21, 61); font-family: "Dm serif text", " roboto serif", serif;}
 
@@ -243,6 +244,8 @@ footer{
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
     padding: 0 50px;
+    justify-content: center;
+    align-items: center;
 
 }
 .quick-about{ padding: 20px;}
@@ -316,6 +319,7 @@ footer{
 .fixed-whatsapp-link img{
     width: 70px;
 }
+
 
 
 @media (max-width: 690px){
@@ -398,4 +402,22 @@ footer{
     .email-contact{ max-width: none;} 
     .whatsapp-contact{ max-width: none;}
 
+}
+
+@media (min-width: 690px) and (max-width: 980px){
+    .contact-header{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        gap: 20px;
+        padding: 80px 20px;
+    }
+
+        .footer-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,auto);
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
 }
